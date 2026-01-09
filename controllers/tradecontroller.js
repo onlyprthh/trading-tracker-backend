@@ -1,12 +1,7 @@
 const Trade = require("../models/Trade");
 
 exports.getTrades = async (req, res) => {
-  try {
-    const trades = await Trade.find().sort({ createdAt: -1 });
-    res.json(trades);
-  } catch (error) {
-    res.status(500).json({ message: "Failed to fetch trades" });
-  }
+  res.json([]);
 };
 
 exports.createTrade = async (req, res) => {
