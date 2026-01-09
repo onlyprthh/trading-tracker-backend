@@ -5,7 +5,7 @@ const {
   getTrades,
   createTrade,
   updateTrade,
-  deleteTrade
+  deleteTrade,
 } = require("../controllers/tradecontroller");
 
 router.get("/", getTrades);
